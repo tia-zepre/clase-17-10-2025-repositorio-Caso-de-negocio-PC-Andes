@@ -2,12 +2,15 @@
 import React from 'react'
 import imagen2 from '../assets/images/descripcion-de-empresa.jpg'
 import Card from 'react-bootstrap/Card';
+import imagenSSD from '../assets/images/ssd.jpg'
+import memorias from '../assets/images/memorias.jpg'
+import procesadores from '../assets/images/procesadores.jpg'
 
 function informacion() {
   return (
-    <div className='row'>
+    <div className='row' >
         <div className=' col-lg-6'>
-            <img src={imagen2} alt="descripcion empresa" />
+            <img src={imagen2} style={{ width: '100%' }}alt="descripcion empresa" />
         </div>
         <div className=' col-lg-6'>
             <h3>Misión</h3>
@@ -17,13 +20,25 @@ function informacion() {
         </div>
         
         <div className=' col-lg-4'>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '100%' }}>
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                    <Card.Title>Tarjeta SSD</Card.Title>
+                    <img src={imagenSSD} style={{ width: '50%' }} alt="Tarjeta SSD"/>
                     <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    Dale una nueva vida a tu computador. Con este disco SSD, experimentarás arranques instantáneos, carga de programas ultrarrápida y una multitarea fluida como nunca antes. ¡Actualiza tu rendimiento de inmediato!
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>  
+                </Card.Body>
+            </Card>
+        </div>
+        <div className=' col-lg-4'>
+            <Card style={{ width: '100%' }}>
+                <Card.Body>
+                    <Card.Title>Memorias</Card.Title>
+                    <img src={memorias} style={{ width: '50%' }} alt="Memorias" />
+                    <Card.Text>
+                     ¡Aumenta tus FPS y reduce los tirones! Con esta memoria RAM, tu sistema manejará los juegos más exigentes y las tareas pesadas sin esfuerzo, garantizando una experiencia fluida y rápida en todo momento.
                     </Card.Text>
                     <Card.Link href="#">Card Link</Card.Link>
                     <Card.Link href="#">Another Link</Card.Link>
@@ -31,27 +46,12 @@ function informacion() {
             </Card>
         </div>
         <div className=' col-lg-4'>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '100%' }}>
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                    <Card.Title>Procesadores</Card.Title>
+                    <img src={procesadores} style={{ width: '50%' }} alt="Procesadores" />
                     <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                    </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
-                </Card.Body>
-            </Card>
-        </div>
-        <div className=' col-lg-4'>
-            <Card style={{ width: '18rem' }}>
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    Libera el máximo rendimiento en tus juegos. Este procesador de última generación está diseñado para ofrecerte la fluidez y velocidad que necesitas para dominar cada partida, con un rendimiento excepcional que evitará cuellos de botella con tu tarjeta gráfica.
                     </Card.Text>
                     <Card.Link href="#">Card Link</Card.Link>
                     <Card.Link href="#">Another Link</Card.Link>
