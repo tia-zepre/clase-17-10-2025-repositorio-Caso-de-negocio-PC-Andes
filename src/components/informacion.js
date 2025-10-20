@@ -27,8 +27,8 @@ function informacion() {
                     <Card.Text>
                     Dale una nueva vida a tu computador. Con este disco SSD, experimentarás arranques instantáneos, carga de programas ultrarrápida y una multitarea fluida como nunca antes. ¡Actualiza tu rendimiento de inmediato!
                     </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>  
+                    <Card.Link href="#">Pincha aqui</Card.Link>
+                    
                 </Card.Body>
             </Card>
         </div>
@@ -40,8 +40,8 @@ function informacion() {
                     <Card.Text>
                      ¡Aumenta tus FPS y reduce los tirones! Con esta memoria RAM, tu sistema manejará los juegos más exigentes y las tareas pesadas sin esfuerzo, garantizando una experiencia fluida y rápida en todo momento.
                     </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
+                    <Card.Link href="#">Pincha aqui</Card.Link>
+                    
                 </Card.Body>
             </Card>
         </div>
@@ -53,8 +53,8 @@ function informacion() {
                     <Card.Text>
                     Libera el máximo rendimiento en tus juegos. Este procesador de última generación está diseñado para ofrecerte la fluidez y velocidad que necesitas para dominar cada partida, con un rendimiento excepcional que evitará cuellos de botella con tu tarjeta gráfica.
                     </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
+                    <Card.Link href="#">Pincha aqui</Card.Link>
+                    
                 </Card.Body>
             </Card>
         </div>
