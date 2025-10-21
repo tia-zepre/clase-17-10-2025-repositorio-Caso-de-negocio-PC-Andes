@@ -3,8 +3,9 @@ import './App.css';
 import NavbarPrincipal from './components/Navbar';
 import Banner from './components/banner';
 import Informacion from './components/informacion';
-import Cotizacor from './components/cotizador';
+
 import CalculoCotizacor from './components/CalculoCotizacor';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
         <NavbarPrincipal/>
         <Banner/>
         <Informacion/>
-        <Cotizacor/>
-        <CalculoCotizacor/>
 
+        <CalculoCotizacor/>
+        <Footer/>
       </div>
 
     </div>

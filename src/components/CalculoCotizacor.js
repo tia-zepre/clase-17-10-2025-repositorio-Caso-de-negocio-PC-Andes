@@ -15,10 +15,11 @@ function CalculoCotizacor() {
     const precioGarantia = Garantia == 1 ? 10000 : 0;
 
     // variables de resultado
-    const resultadoSubtotal = parseInt(PrecioCPU) + ( parseInt(PrecioGPU) * parseInt(CantidadModulosRam) );
+    const resultadoSubtotal = parseInt(PrecioCPU) + (parseInt(PrecioGPU) * parseInt(CantidadModulosRam));
     const resultadoDescuento = parseInt(Descuento);
-    const resultadoIva = ( (resultadoSubtotal + precioGarantia ) - resultadoDescuento) * porcentajeIva ;
-    const resultadoTotal = ( (resultadoSubtotal + precioGarantia ) - resultadoDescuento) - resultadoIva;
+    const resultadoIva = ( (resultadoSubtotal + precioGarantia) - resultadoDescuento) * porcentajeIva;
+    const resultadoTotal = ( (resultadoSubtotal + precioGarantia) - resultadoDescuento) + resultadoIva;
+
    
 
  
@@ -67,6 +68,7 @@ function CalculoCotizacor() {
 
                 <div className='col-lg-6'>
                     <h3 className='my-3'>Resultados</h3>
+
                     <Table striped bordered hover>
                         <thead>
                             <tr>
@@ -84,7 +86,7 @@ function CalculoCotizacor() {
                             <tr>
                                 <td>2</td>
                                 <td>iva ({(porcentajeIva * 100).toFixed(1)}%)</td>
-                                <td></td>
+                                <td>{resultadoIva.toLocaleString()}</td>
                             </tr>
                             <tr>
                                 <td>3</td>
@@ -103,6 +105,7 @@ function CalculoCotizacor() {
                             </tr>
                         </tbody>
                     </Table>
+
                 </div>
             </div>
         </div>
